@@ -84,6 +84,11 @@ gsettings set org.onboard.window.landscape width 480
 gsettings set org.onboard.window.landscape height 300
 ```
 
+Install a window manager so that the keyboard can be used as interface
+```bash
+sudo apt install matchbox-window-manager
+```
+
 If you don't have it already installed, use the following command to install the `gcode_shell_command.py` for your printer. That lets us run our own shell files:
 ```bash
 cd ~/klipper/klippy/extras/
