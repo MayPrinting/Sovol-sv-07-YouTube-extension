@@ -5,6 +5,7 @@ import subprocess
 
 def close_youtube():
     subprocess.run(["/home/mks/scripts/stop_youtube.sh"])
+    exit()
 def open_keyboard():
     subprocess.Popen(["onboard"])
 
