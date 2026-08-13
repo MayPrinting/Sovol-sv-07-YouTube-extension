@@ -12,7 +12,7 @@ def open_keyboard():
 root = tk.Tk()
 root.overrideredirect(True)          # keine Fensterdekoration
 root.attributes("-topmost", True)
-root.geometry("480x50+0+30")          # X/Y-Position anpassen, z.B. Ecke wo Tou$
+root.geometry("480x50+0+750")          # X/Y-Position anpassen, z.B. Ecke wo Tou$
 root.configure(bg="black")
 
 
