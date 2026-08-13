@@ -1,5 +1,7 @@
 # Sovol sv 07 YouTube extension
-<img src="/images/IMG_2748.HEIC">
+<center>
+<img src="/images/IMG_2748.HEIC" height="200px">
+</center>
 
 A KlipperScreen extension that seamlessly integrates YouTube into the Sovol SV07 touchscreen!
 
