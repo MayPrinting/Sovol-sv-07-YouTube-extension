@@ -68,10 +68,19 @@ sudo apt install chromium
 which chromium
 chromium --version
 ```
+Chromium itself does not include on-screen keyboard logic. We will have to install `onboard`
+```bash
+sudo apt install onboard
+```
 
 If you don't have it already installed, use the following command to install the `gcode_shell_command.py` for your printer. That lets us run our own shell files:
 ```bash
+cd ~/klipper/klippy/extras/
 wget https://raw.githubusercontent.com/MayPrinting/Sovol-sv-07-YouTube-extension/refs/heads/main/gcode_shell_command.py
+```
+Restart the system
+```bash
+sudo systemctl restart klipper
 ```
 
 Check if your mkspi already has a folder for your own scripts, otherwise create one:
@@ -107,6 +116,39 @@ scp ~/Sovol-sv-07-YouTube-extension/icons/youtube.svg mks@mkspi:/home/mks/Klippe
 ```
 
 Switch terminals again. We will continue with creating a button in the `actions` menu, so that you can access YouTube the easiest way.
+We will need to edit the KlipperScreen.conf.
+```bash
+sudo nano ~/KlipperScreen/KlipperScreen.conf
+```
+Right before the `Do not edit` section, paste this:
+```bash
+[menu __main actions youtube]
+name: YouTube
+icon: youtube
+method: printer.gcode.script
+params: {"script":"START_YOUTUBE"}
+```
+The last step ist adding a gcode macro in the printer.cfg:
+```bash
+sudo nano ~/printer_data/config/printer.cfg
+```
+Just at the end of the section `gcode macros`, add the YouTube macro:
+```bash
+[gcode_shell_command start_youtube]
+command: /home/mks/scripts/start_youtube.sh
+timeout: 30.
+verbose: True
+
+[gcode_macro START_YOUTUBE]
+gcode:
+    RUN_SHELL_COMMAND CMD=start_youtube
+```
+
+# 🎉 Restart your KlipperScreen and YouTube is ready!
+```bash
+sudo systemctl restart KlipperScreen
+```
+
 
 
 
