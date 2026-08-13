@@ -151,6 +151,23 @@ sudo systemctl restart KlipperScreen
 
 
 
+## Usage
+
+# Normal usage:
+On your Klipper screen, navigate to `Home > Actions` and launch YouTube via the YouTube button
+
+# Usage during printing
+<i>Note: The print may stop for a second but usually continues when chrome started</i>
+
+On your Klipper screen, got to `Macros` and choose START_YOUTUBE
+
+# Embedded into your .gcode print file
+
+In orca slicer, hover Sovol sv 07 and click the edit button appearing on the right, navigate to `Machine G-code` and add `START_YOUTUBE` in the `Machine start G-code` textbox.
+
+You can also choose a layer and select `+` > add Custom G-code.
+
+### Happy printing (and watching)!
 
 
 
