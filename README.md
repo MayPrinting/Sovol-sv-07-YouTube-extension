@@ -74,14 +74,13 @@ sudo apt install onboard
 ```
 Set the keyboard up:
 ```bash
-gsettings set org.onboard.window docking-enabled true
-gsettings set org.onboard.window docking-edge bottom
+gsettings list-keys org.onboard.window.portrait
+gsettings set org.onboard.window docking-enabled false
 gsettings set org.onboard.window force-to-top true
-
-gsettings set org.onboard.window.landscape x 0
-gsettings set org.onboard.window.landscape y 450
-gsettings set org.onboard.window.landscape width 480
-gsettings set org.onboard.window.landscape height 300
+gsettings set org.onboard.window.portrait width 480
+gsettings set org.onboard.window.portrait height 300
+gsettings set org.onboard.window.portrait x 0
+gsettings set org.onboard.window.portrait y 450
 ```
 
 Install a window manager so that the keyboard can be used as interface
