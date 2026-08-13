@@ -79,7 +79,7 @@ gsettings set org.onboard.window docking-edge bottom
 gsettings set org.onboard.window force-to-top true
 
 gsettings set org.onboard.window.landscape x 0
-gsettings set org.onboard.window.landscape y 400
+gsettings set org.onboard.window.landscape y 450
 gsettings set org.onboard.window.landscape width 480
 gsettings set org.onboard.window.landscape height 300
 ```
