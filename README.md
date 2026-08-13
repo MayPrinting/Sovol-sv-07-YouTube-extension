@@ -68,9 +68,20 @@ sudo apt install chromium
 which chromium
 chromium --version
 ```
-Chromium itself does not include on-screen keyboard logic. We will have to install `onboard`
+Chromium itself does not include on-screen keyboard logic. We will have to install `onboard`:
 ```bash
 sudo apt install onboard
+```
+Set the keyboard up:
+```bash
+gsettings set org.onboard.window docking-enabled true
+gsettings set org.onboard.window docking-edge bottom
+gsettings set org.onboard.window force-to-top true
+
+gsettings set org.onboard.window.landscape x 0
+gsettings set org.onboard.window.landscape y 400
+gsettings set org.onboard.window.landscape width 480
+gsettings set org.onboard.window.landscape height 300
 ```
 
 If you don't have it already installed, use the following command to install the `gcode_shell_command.py` for your printer. That lets us run our own shell files:
@@ -167,6 +178,9 @@ In orca slicer, hover Sovol sv 07 and click the edit button appearing on the rig
 
 You can also choose a layer and select `+` > `add Custom G-code`.
 
+## About the keyboard
+Hide the keyboard using `x` in the top right corner on the keyboard.
+Show keyboard using the keyboard button in the top left corner of the screen.
 
 
 # 🥳 Happy printing (and watching)!
