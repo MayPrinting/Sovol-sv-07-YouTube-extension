@@ -22,8 +22,8 @@ chromium \
   --disable-gpu \
   --disable-dev-shm-usage \
   --start-maximized \
-  --window-position=0,80 \
-  --window-size=480,720 \
+  --window-position=0,0 \
+  --window-size=480,750 \
   --force-renderer-accessibility \
   https://www.youtube.com &
 
