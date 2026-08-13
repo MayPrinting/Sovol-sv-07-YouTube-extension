@@ -13,7 +13,7 @@ A KlipperScreen extension that seamlessly integrates YouTube into the Sovol SV07
 
 ## Installation
 
-<i>All the installation steps need the repository to be cloned into the user folder of your computer, using the command `git clone`</i>
+<i>All the installation steps need the repository to be cloned into the user folder of your computer, using the command `git clone https://github.com/MayPrinting/Sovol-sv-07-YouTube-extension.git`</i>
 
 
 Build a connection to your Klipper Screen via ssh. The default password for the user `mks` is `makerbase`:
