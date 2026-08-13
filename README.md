@@ -165,9 +165,11 @@ On your Klipper screen, got to `Macros` and choose START_YOUTUBE
 
 In orca slicer, hover Sovol sv 07 and click the edit button appearing on the right, navigate to `Machine G-code` and add `START_YOUTUBE` in the `Machine start G-code` textbox.
 
-You can also choose a layer and select `+` > add Custom G-code.
+You can also choose a layer and select `+` > `add Custom G-code`.
 
-# Happy printing (and watching)!
+
+
+# 🥳 Happy printing (and watching)!
 
 
 
