@@ -167,7 +167,7 @@ In orca slicer, hover Sovol sv 07 and click the edit button appearing on the rig
 
 You can also choose a layer and select `+` > add Custom G-code.
 
-#Happy printing (and watching)!
+# Happy printing (and watching)!
 
 
 
