@@ -8,9 +8,13 @@ export NO_AT_BRIDGE=0
 /usr/lib/at-spi2-core/at-spi-bus-launcher &
 sleep 1
 
+pkill -f matchbox-window-manager
 pkill -f chromium
 pkill -f overlay_bar.py
 pkill onboard
+sleep 1
+
+matchbox-window-manager -use_titlebar no &
 sleep 1
 
 chromium \
