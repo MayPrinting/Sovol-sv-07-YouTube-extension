@@ -166,7 +166,7 @@ gcode:
 The last step is keeping the user-session-infrastucture for `mks` alive, even if we are not connected via ssh:
 ```bash
 sudo loginctl enable-linger mks
-``
+```
 
 ## 🎉 Restart your KlipperScreen and YouTube is ready!
 ```bash
