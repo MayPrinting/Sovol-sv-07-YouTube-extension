@@ -101,10 +101,12 @@ Restart the system
 sudo systemctl restart klipper
 ```
 
-Check if your mkspi already has a folder for your own scripts, otherwise create one:
+Check if your mkspi already has a folder for your own scripts, otherwise create one.
 ```bash
+Check:
 ls
 ```
+Create:
 ```bash
 mkdir scripts
 ```
@@ -187,7 +189,7 @@ You can also choose a layer and select `+` > `add Custom G-code`.
 
 ## About the keyboard
 Hide the keyboard using `x` in the top right corner on the keyboard.
-Show keyboard using the keyboard button in the top left corner of the screen.
+Show keyboard using the `⌨` button in the bottom left corner of the screen.
 
 
 # 🥳 Happy printing (and watching)!
