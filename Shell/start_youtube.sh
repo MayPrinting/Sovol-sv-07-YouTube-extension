@@ -1,4 +1,11 @@
 #!/bin/bash
+exec > /tmp/start_youtube.log 2>&1
+echo "=== Start: $(date) ==="
+echo "Whoami: $(whoami), UID: $(id -u)"
+echo "DISPLAY: $DISPLAY"
+echo "DBUS: $DBUS_SESSION_BUS_ADDRESS"
+ls -la /run/user/1000/bus 2>&1
+
 export DISPLAY=:0
 export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 export XAUTHORITY=/home/mks/.Xauthority
@@ -30,3 +37,5 @@ chromium \
 sleep 2
 onboard &
 python3 /home/mks/scripts/overlay_bar.py &
+
+echo "=== End: $(date) ==="
