@@ -148,7 +148,7 @@ icon: youtube
 method: printer.gcode.script
 params: {"script":"START_YOUTUBE"}
 ```
-The last step ist adding a gcode macro in the printer.cfg:
+We need to add a gcode macro in the printer.cfg:
 ```bash
 sudo nano ~/printer_data/config/printer.cfg
 ```
@@ -163,6 +163,10 @@ verbose: True
 gcode:
     RUN_SHELL_COMMAND CMD=start_youtube
 ```
+The last step is keeping the user-session-infrastucture for `mks` alive, even if we are not connected via ssh:
+```bash
+sudo loginctl enable-linger mks
+``
 
 ## 🎉 Restart your KlipperScreen and YouTube is ready!
 ```bash
